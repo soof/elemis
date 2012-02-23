@@ -1,0 +1,179 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Fadelicious PSD to HTML5</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+
+  <!-- CSS: implied media="all" -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr-1.7.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+	<img id="logo" src="images/logo.png" alt="Fadelicious">
+	<h1 class="visuallyhidden">Fadelicious</h1>
+	<nav>
+	    <h2 class="visuallyhidden">Main Page Navigation</h2>
+	    <ul>
+	        <li class="first-child"><a href="#">Home</a></li>
+	        <li><a href="#">Blog</a></li>
+	        <li><a href="#">Portfolio</a></li>
+	        <li><a href="#">Services</a></li>
+	        <li class="last-child"><a href="#">Contact</a></li>
+	    </ul>
+	</nav>
+    </header>
+    <div id="main" role="main">
+	<div id="slider">
+	    <ul id="images">
+		    <li><img src="images/water1_930.jpg"></li>
+		    <li class="current"><img src="images/waterGreen_930.jpg"></li>
+		    <li><img src="images/waterFeet_930.jpg"></li>
+	    </ul>
+	    <ul id="circles">
+	      <li></li>
+		    <li class="current"></li>
+	      <li></li>
+	    </ul>
+	    <ul id="prevNext">
+        	<li id="previous"><span class="visuallyhidden" >Previous Slide<</span></li>
+            <li id="next"><span class="visuallyhidden" >Next Slide</span></li>
+        </ul>
+	</div> <!--slider-->
+	<h2 id="intro">Hi! This is Fadelicious. New unique look for your blog & portfolio. 
+	    Vivamus porttitor tristique augue a vestibulum. Maecenas sodales risus porta mi semper in auctor massa posuere. </h2>
+	<section id="services" class="clearfix">
+	    <h2 class="visuallyhidden">Services</h2>
+	    <ul>
+		<li>
+        	<img src="images/packageDesign.png" alt="gift box packaging">
+		    <h3>Package Design</h3>
+		    <p>Praesent erat anteport hanip, condimentum quis facilisisac condimentum in ipsum.</p>
+		    <a href="#">View Details</a>
+		</li>
+		<li>
+        	<img src="images/webDesign.png" alt="web design">
+		    <h3>Web Design</h3>
+		    <p>Duis quam ipsum, pharetra nec iaculis non, laoreet et nunc. Ut luctus justo velerat lacinia.</p>
+		    <a href="#">View Details</a>
+		</li>
+		<li>
+        	<img src="images/ecommerce.png" alt="e-commerce">
+		    <h3>E-Commerce</h3>
+		    <p>Sed sit amet tortor vel risus volutpat pretium non at estar. Maecenas vitae lectus moles</p>
+		    <a href="#">View Details</a>
+		</li>
+		<li>
+        	<img src="images/support.png" alt="full support">
+		    <h3>Full Support</h3>
+		    <p>Curabitur nulla antenov, ullamcorper eu iaculis utar, convallis ac massa.  </p>
+		    <a href="#">View Details</a>
+		</li>
+	    </ul>
+	</section>
+	<section id="about">
+	    <h2>About Us</h2>
+	    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non 
+		numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+
+Ut enim ad minima
+		 veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+	</section>
+	<section id="latestWork">
+	    <h2 >Latest Work</h2>
+	    <ul>
+		<li><img src="images/water_small.jpg"></li>
+		<li><img src="images/coffee_small.jpg"></li>
+		<li><img src="images/cups_small.jpg"></li>
+		<li><img src="images/coffee2_small.jpg"></li>
+	    </ul>
+	</section>
+    </div><!--main-->
+  </div> <!--! end of #container -->
+	<footer id="blogsAndTweets" class="clearfix">
+	    <section class="clearfix">
+	    <h2 class="visuallyhidden">Blogs and Tweets</h2>
+	    <aside id="recentPosts">
+		<h2>Recent Posts</h2>
+		<ul>
+		    <li>Duis id tellus at eros tempor imper.</li>
+		    <li>Aenean ligula nisl, fermentum vel lobortis id, scelerisque at lorem.</li>
+		    <li>Suspendisse nec neque ut nunc rhoncus sodales.</li>
+		    <li>Duis id Nam pulvinar faucibus dui.</li>
+		    <li>Pellentesque pulvinar sagittis.</li>
+		</ul>
+	    </aside>
+	    <aside id="archives">
+		<h2>Archives</h2>
+		<ul>
+		    <li>January 2010</li>
+		    <li>February 2010</li>
+		    <li>March 2010</li>
+		    <li>April 2010</li>
+		    <li>May 2010</li>
+		    <li>June 2010</li>
+		</ul>
+	    </aside>
+	    <aside id="twitter" class="last-child">
+		<h2>Twitter</h2>
+		<p>Sed ut perspiciatis unde omnis iste natus, error sit voluptatem accusantium 
+		   <span class="url">http://bit.ly/bkPfFM</span> doloremque laudantium, totam rem aperiamea. 
+		   <span class="twitterStamp">3 hours ago<br></span><span class="twitterName">@jacquelinecharl</span></p>
+	    </aside>
+        </section>
+	    <div><div>
+		<p><small>&copy; Copyright 2010 Starlight. All Right Reserved</small></p>
+		<ul>
+		    <li id="facebook"><a href="#facebook"><span class="visuallyhidden">Facebook</span></a></li>
+		    <li id="tumbler"><a href="#"><span class="visuallyhidden">Tumbler</span></a></li>
+		    <li id="flickr"><a href="#"><span class="visuallyhidden">Flickr</span></a></li>
+		    <li id="stumble"><a href="#"><span class="visuallyhidden">Stumbled Upon</span></a></li>
+		    <li id="delicious"><a href="#"><span class="visuallyhidden">Delicious</span></a></li>
+		    <li id="rss"><a href="#rss"><span class="visuallyhidden">RSS</span></a></li>		
+		</ul>
+	    </div></div>
+	</footer>
+
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src='js/libs/jquery-1.6.2.min.js'></script>
+  <script src="js/fadelicious.js"></script>
+
+  <!-- scripts concatenated and minified via ant build script
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>-->
+  <!-- end scripts-->
+
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+
+
+</body>
+</html>
