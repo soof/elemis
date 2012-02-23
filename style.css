@@ -1,0 +1,246 @@
+
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+
+/*** Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/   */
+
+body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
+select, input, textarea, button { font:99% sans-serif; }
+
+/* Normalize monospace sizing:  en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+
+/*** Minimal base styles. */
+
+/* Always force a scrollbar in non-IE */
+html { overflow-y: scroll; }
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active { outline: none; }
+
+
+/* Remove margins for navigation lists */
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+
+td { vertical-align: top; }
+
+/* Set sub, sup without affecting line-height: gist.github.com/413930 */
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre {
+  /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+  white-space: pre; white-space: pre-wrap; word-wrap: break-word;
+  padding: 15px;
+}
+
+textarea { overflow: auto; } /* www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
+
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+
+/* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea { margin: 0; }
+
+/* Colors for form validity */
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid {
+   border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red;
+}
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+
+/* These selection declarations have to be separate
+   No text-shadow: twitter.com/miketaylr/status/12228805301
+   Also: hot pink! */
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+
+/* j.mp/webkit-tap-highlight-color */
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+
+/* Make buttons play nice in IE:
+   www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+button {  width: auto; overflow: visible; }
+
+
+
+
+
+body, select, input, textarea {
+  background: #e8e8e8;
+  color: #444;
+  /* font-family: Georgia, serif;  */
+}
+
+
+h1, h2, h3, h4, h5, h6 { font-family: "qlassik bold", arial, san-serif; }
+p {font: 14px/20px "trebuchet ms", arial, san-serif;}
+
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+
+
+/*** Primary styles ****/
+
+ul, li {list-style: none;}
+
+div#container {width:960px; margin: 45px auto 0;}
+div#container header nav {height: 34px; paddling-left: 10px; background: url(images/menuLeft.png) no-repeat left top; float:right;}
+div#container header nav ul {height: 34px; padding-right: 10px; background: url(images/menuRight.png) no-repeat right top;}
+div#container header nav ul li {height: 34px; background: url(images/menuBG.png) repeat-x; display:inline; float:left;}
+div#container header nav ul li.first-child {margin-left: 10px; }
+div#container header nav ul li a {height: 34px; font: 19px/34px "qlassik bold", arial, san-serif; color: #515151; padding: 0 20px; text-decoration:none;
+				  background: url(images/menuDivider.png) no-repea -t right top; }
+div#container header nav ul li.last-child a {background:none;}			
+div#container header nav ul li:hover {background: url(images/menuHoverBG.png); }
+
+
+div#slider {width: 995px; height: 415px; background: url(images/sliderBG.png) no-repeat; margin: 40px 0 0 -20px; z-index:-10;}
+div#slider ul#images {width: 930px; height: 350px; overflow: hidden; position: relative; margin: 0 16px 0 34px; padding-top:16px;}
+div#slider ul#images li {z-index: 10; position:absolute;  }
+div#slider ul#images li.current {z-index: 20; }
+div#slider ul#circles {height: 12px; float: left; margin: 14px 17px 0 36px;}
+div#slider ul#circles li {display:inline; float: left; width:12px; height:12px; background: url(images/circles.png); margin-right: 5px; cursor:pointer; }
+div#slider ul#circles li.current {background: url(images/circles.png) 0px -12px ; }
+div#slider ul#prevNext {float:right; margin: 10px 34px 0 0;}
+div#slider ul#prevNext li {width: 21px; height: 21px; margin: 0 0px 0 5px; float:left; cursor:pointer;  }
+div#slider ul#prevNext li#previous {background: url(images/arrows.png) 0px 0px; }
+div#slider ul#prevNext li#next {background: url(images/arrows.png) -23px 0px; }
+div#slider ul#prevNext li#previous:hover {background: url(images/arrows.png) 0px -21px;}
+div#slider ul#prevNext li#next:hover {background: url(images/arrows.png) -23px -21px;}
+
+
+div#container h2#intro {font: 28px/1.2 "qlassik bold", arial, san-serif; color: #747474; margin-top: 40px;
+		        -moz-text-shadow: 1px 1px 1px #fff; 
+			-moz-text-shadow: 1px 1px 1px #fff; 
+			text-shadow: 1px 1px 1px #fff; }
+
+section#services ul li {width:210px; text-align:center; display:inline; float: left; margin: 80px 12px 20px 5px;}
+section#services ul li img {display: block; margin: 0 auto;}
+section#services ul li h3 {color:#3a3a3a; font-size: 22px; line-height:22px; margin: 10px 0;}
+section#services ul li a {display:block; width:120px; height: 37px;line-height: 35px; background: url(images/buttonBG.png); 
+			  margin: 20px auto 0; text-decoration:none; font: 20px/35px "qlassik bold", arial, san-serif; color:#1d1d1d; color:#3a3a3a;
+			  -moz-text-shadow: 1px 1px 1px #fff; -moz-text-shadow: 1px 1px 1px #fff; text-shadow: 1px 1px 1px #fff;}
+
+section#about {width:470px; height: 305px; margin: 80px 0 0 0; float:left}
+section#latestWork {width:470px; margin: 80px 0 0 0; float:right;}
+section#about h2, section#latestWork h2 {padding-left: 40px; height:27px; font-size: 25px; color:#3a3a3a; -moz-text-shadow: 1px 1px 1px #fff; -moz-text-shadow: 1px 1px 1px #fff; text-shadow: 1px 1px 1px #fff; }
+
+section#about h2 {background: url(images/aboutUsIcon.png) no-repeat top left;}
+section#about p {margin-top: 23px; font-size: 14px; line-height: 20px;  }
+section#latestWork  h2{background: url(images/latestWorkIcon.png) no-repeat top left;}
+section#latestWork ul {display:block; float:right; margin:0;}
+section#latestWork ul li {width: 100px; height:100px; background: url(images/thumbnailBG.png); margin: 23px 17px 0 0; float: left;}
+section#latestWork ul li img {margin: 10px;}
+
+footer {background: url(images/footerBG.jpg) repeat-x;clear:both;}
+footer section {width: 960px; margin: 0 auto; }
+footer aside {width: 280px; height: 300px; margin: 40px 60px 0 0; float:left;}
+footer aside.last-child {margin-right: 0;}
+footer aside h2 {padding-left:40px; font-size: 25px; color:#c9c9c9; }
+footer aside#recentPosts {background: url(images/recentPosts.png) no-repeat ;}
+footer aside#archives {background: url(images/archives.png) no-repeat; }
+footer aside#twitter {background: url(images/twitterBirdSmall.png) no-repeat; font-weight:normal; }
+footer aside ul li, footer aside p {font: 14px/20px "trebuchet ms", arial, san-serif;  color: #aaa;}
+footer aside ul li {padding-left: 28px; margin: 20px 0 0 10px; background: url(images/checkIcon.png) no-repeat left top;}
+footer aside#twitter p {background: url(images/twitterBox.png) no-repeat; width: 250px; height:150px; padding: 12px 15px 15px 15px; margin: 20px 0 0; font: italic 14px/20px georgia, arial, san-serif; color:#aaa; }
+footer aside#twitter p span.url {color:#6e9220;}
+footer aside#twitter p span.twitterStamp {font: 12px/20px "trebuchet ms", arial, san-serif; color:#6e9220;}
+footer aside#twitter p span.twitterName {font: 12px/28px "trebuchet ms", arial, san-serif; color:#6e9220;}
+
+footer div {height: 70px;  background: url(images/footerBottomBG.png) repeat-x ;}
+footer div div {width:960px; margin: 0 auto;}
+footer div div p {line-height: 70px; width: 400px; float: left;}
+footer div div ul {float:right;}
+footer div div ul li {display:inline; float: left; width: 24px; height: 28px; margin: 23px 10px 0 0;}
+footer div div ul li a {padding: 5px 10px;}
+footer div div ul li#facebook {background:url(images/socialMedia.png) -5px 0px ;}
+footer div div ul li#tumbler {background:url(images/socialMedia.png) -38px 0px ;}
+footer div div ul li#flickr {background:url(images/socialMedia.png) -71px 0px ;}
+footer div div ul li#stumble {background:url(images/socialMedia.png) -104px 0px ;}
+footer div div ul li#delicious {background:url(images/socialMedia.png) -137px 0px ;}
+footer div div ul li#rss {background:url(images/socialMedia.png) -170px 0px ;}
+
+/**
+ * Non-semantic helper classes: please define your styles before this section.
+ */
+
+/* For image replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+
+/* Hide for both screenreaders and browsers:  css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display: none; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal. www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.   j.mp/bestclearfix */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+/* Fix clearfix: blueprintcss.lighthouseapp.com/projects/15318/tickets/5-extra-margin-padding-bottom-of-page */
+.clearfix { zoom: 1; }
+
